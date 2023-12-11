@@ -1,0 +1,36 @@
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.exe
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.deps.json
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.runtimeconfig.json
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.dll
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.pdb
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.csproj.AssemblyReference.cache
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.Hauptformular.resources
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.csproj.GenerateResource.cache
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.AssemblyInfoInputs.cache
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.AssemblyInfo.cs
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.csproj.CoreCompileInputs.cache
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.dll
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\refint\Meineformulare1.dll
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.pdb
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.genruntimeconfig.cache
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\ref\Meineformulare1.dll
+C:\Users\norbert.ernst\source\repos\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.Meinevariablen.resources
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.exe
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.deps.json
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.runtimeconfig.json
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.dll
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\bin\Debug\net6.0-windows\Meineformulare1.pdb
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.Hauptformular.resources
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.Meinevariablen.resources
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.csproj.GenerateResource.cache
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.GeneratedMSBuildEditorConfig.editorconfig
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.AssemblyInfoInputs.cache
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.AssemblyInfo.cs
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.csproj.CoreCompileInputs.cache
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.dll
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\refint\Meineformulare1.dll
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.pdb
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.genruntimeconfig.cache
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\ref\Meineformulare1.dll
+H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Meineformulare1.Formvariablen.resources

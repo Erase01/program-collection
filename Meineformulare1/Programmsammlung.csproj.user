@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Arrays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formvariablen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Hauptformular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Methoden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Nährungsverfahren_zur_Berechnung_von_Wurzelwerten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Rekusionsverfahren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Variablen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Schleifen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Verzweigungen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
