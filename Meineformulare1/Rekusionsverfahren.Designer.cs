@@ -58,6 +58,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -398,11 +399,22 @@
             this.listBox1.Size = new System.Drawing.Size(120, 94);
             this.listBox1.TabIndex = 30;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(65, 164);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(81, 15);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Error Message";
+            this.label15.Visible = false;
+            // 
             // Rekusionsverfahren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.numericUpDown11);
             this.Controls.Add(this.label14);
@@ -483,5 +495,6 @@
         private Label label14;
         private NumericUpDown numericUpDown11;
         private ListBox listBox1;
+        private Label label15;
     }
 }

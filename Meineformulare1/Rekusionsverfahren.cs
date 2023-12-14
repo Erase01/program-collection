@@ -39,6 +39,9 @@ namespace Programmsammlung
             var startw = Convert.ToDouble(numericUpDown11.Value);
             double preResult = 0;
             double epsilon = 0.000001;
+            int maxIterations = 1000;
+            int iterationCount = 0;
+            label15.Visible = false;
 
             while (true)
             {
@@ -53,6 +56,15 @@ namespace Programmsammlung
                     break;
                 }
 
+                else if (iterationCount >= maxIterations)
+                {
+                    label15.ForeColor = Color.Orange;
+                    label15.Text = "Ungültige Funktion: Keine Konvergenz nach " + maxIterations + " Iterationen";
+                    label15.Visible = true;
+                    break;
+                }
+
+                iterationCount++;
                 preResult = startw;
             }
 
