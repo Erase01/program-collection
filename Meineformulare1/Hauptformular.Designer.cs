@@ -28,121 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            beendenToolStripMenuItem = new ToolStripMenuItem();
-            eingefügteFormulareToolStripMenuItem = new ToolStripMenuItem();
-            varablenToolStripMenuItem = new ToolStripMenuItem();
-            variablenToolStripMenuItem = new ToolStripMenuItem();
-            schleifenToolStripMenuItem = new ToolStripMenuItem();
-            verzweigungenToolStripMenuItem = new ToolStripMenuItem();
-            arraysToolStripMenuItem = new ToolStripMenuItem();
-            methodenToolStripMenuItem = new ToolStripMenuItem();
-            nährungToolStripMenuItem = new ToolStripMenuItem();
-            wurzelwerteToolStripMenuItem = new ToolStripMenuItem();
-            rekusionsverfahrenToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
-            SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eingefügteFormulareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.varablenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.variablenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.schleifenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verzweigungenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arraysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.methodenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nährungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wurzelwerteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rekusionsverfahrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { beendenToolStripMenuItem, eingefügteFormulareToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.beendenToolStripMenuItem,
+            this.eingefügteFormulareToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // beendenToolStripMenuItem
             // 
-            beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            beendenToolStripMenuItem.Size = new Size(65, 20);
-            beendenToolStripMenuItem.Text = "Beenden";
-            beendenToolStripMenuItem.Click += beendenToolStripMenuItem_Click_1;
+            this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.beendenToolStripMenuItem.Text = "Beenden";
+            this.beendenToolStripMenuItem.Click += new System.EventHandler(this.beendenToolStripMenuItem_Click);
             // 
             // eingefügteFormulareToolStripMenuItem
             // 
-            eingefügteFormulareToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { varablenToolStripMenuItem, variablenToolStripMenuItem, schleifenToolStripMenuItem, verzweigungenToolStripMenuItem, arraysToolStripMenuItem, methodenToolStripMenuItem, nährungToolStripMenuItem, rekusionsverfahrenToolStripMenuItem });
-            eingefügteFormulareToolStripMenuItem.Name = "eingefügteFormulareToolStripMenuItem";
-            eingefügteFormulareToolStripMenuItem.Size = new Size(135, 20);
-            eingefügteFormulareToolStripMenuItem.Text = "Eingefügte_Formulare";
+            this.eingefügteFormulareToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.varablenToolStripMenuItem,
+            this.variablenToolStripMenuItem,
+            this.schleifenToolStripMenuItem,
+            this.verzweigungenToolStripMenuItem,
+            this.arraysToolStripMenuItem,
+            this.methodenToolStripMenuItem,
+            this.nährungToolStripMenuItem,
+            this.rekusionsverfahrenToolStripMenuItem});
+            this.eingefügteFormulareToolStripMenuItem.Name = "eingefügteFormulareToolStripMenuItem";
+            this.eingefügteFormulareToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
+            this.eingefügteFormulareToolStripMenuItem.Text = "Eingefügte_Formulare";
             // 
             // varablenToolStripMenuItem
             // 
-            varablenToolStripMenuItem.Name = "varablenToolStripMenuItem";
-            varablenToolStripMenuItem.Size = new Size(180, 22);
-            varablenToolStripMenuItem.Text = "Variablen";
-            varablenToolStripMenuItem.Click += varablenToolStripMenuItem_Click;
+            this.varablenToolStripMenuItem.Name = "varablenToolStripMenuItem";
+            this.varablenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.varablenToolStripMenuItem.Text = "Variablen";
             // 
             // variablenToolStripMenuItem
             // 
-            variablenToolStripMenuItem.Name = "variablenToolStripMenuItem";
-            variablenToolStripMenuItem.Size = new Size(180, 22);
-            variablenToolStripMenuItem.Text = "FormVariablen";
-            variablenToolStripMenuItem.Click += variablenToolStripMenuItem_Click;
+            this.variablenToolStripMenuItem.Name = "variablenToolStripMenuItem";
+            this.variablenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.variablenToolStripMenuItem.Text = "FormVariablen";
             // 
             // schleifenToolStripMenuItem
             // 
-            schleifenToolStripMenuItem.Name = "schleifenToolStripMenuItem";
-            schleifenToolStripMenuItem.Size = new Size(180, 22);
-            schleifenToolStripMenuItem.Text = "Schleifen";
-            schleifenToolStripMenuItem.Click += schleifenToolStripMenuItem_Click;
+            this.schleifenToolStripMenuItem.Name = "schleifenToolStripMenuItem";
+            this.schleifenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.schleifenToolStripMenuItem.Text = "Schleifen";
             // 
             // verzweigungenToolStripMenuItem
             // 
-            verzweigungenToolStripMenuItem.Name = "verzweigungenToolStripMenuItem";
-            verzweigungenToolStripMenuItem.Size = new Size(180, 22);
-            verzweigungenToolStripMenuItem.Text = "Verzweigungen";
-            verzweigungenToolStripMenuItem.Click += verzweigungenToolStripMenuItem_Click;
+            this.verzweigungenToolStripMenuItem.Name = "verzweigungenToolStripMenuItem";
+            this.verzweigungenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verzweigungenToolStripMenuItem.Text = "Verzweigungen";
             // 
             // arraysToolStripMenuItem
             // 
-            arraysToolStripMenuItem.Name = "arraysToolStripMenuItem";
-            arraysToolStripMenuItem.Size = new Size(180, 22);
-            arraysToolStripMenuItem.Text = "Arrays";
-            arraysToolStripMenuItem.Click += arraysToolStripMenuItem_Click;
+            this.arraysToolStripMenuItem.Name = "arraysToolStripMenuItem";
+            this.arraysToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arraysToolStripMenuItem.Text = "Arrays";
             // 
             // methodenToolStripMenuItem
             // 
-            methodenToolStripMenuItem.Name = "methodenToolStripMenuItem";
-            methodenToolStripMenuItem.Size = new Size(180, 22);
-            methodenToolStripMenuItem.Text = "Methoden";
-            methodenToolStripMenuItem.Click += methodenToolStripMenuItem_Click;
+            this.methodenToolStripMenuItem.Name = "methodenToolStripMenuItem";
+            this.methodenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.methodenToolStripMenuItem.Text = "Methoden";
             // 
             // nährungToolStripMenuItem
             // 
-            nährungToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { wurzelwerteToolStripMenuItem });
-            nährungToolStripMenuItem.Name = "nährungToolStripMenuItem";
-            nährungToolStripMenuItem.Size = new Size(180, 22);
-            nährungToolStripMenuItem.Text = "Nährungsverfahren";
+            this.nährungToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wurzelwerteToolStripMenuItem});
+            this.nährungToolStripMenuItem.Name = "nährungToolStripMenuItem";
+            this.nährungToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nährungToolStripMenuItem.Text = "Nährungsverfahren";
             // 
             // wurzelwerteToolStripMenuItem
             // 
-            wurzelwerteToolStripMenuItem.Name = "wurzelwerteToolStripMenuItem";
-            wurzelwerteToolStripMenuItem.Size = new Size(180, 22);
-            wurzelwerteToolStripMenuItem.Text = "Wurzelwerte";
-            wurzelwerteToolStripMenuItem.Click += wurzelwerteToolStripMenuItem_Click;
+            this.wurzelwerteToolStripMenuItem.Name = "wurzelwerteToolStripMenuItem";
+            this.wurzelwerteToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.wurzelwerteToolStripMenuItem.Text = "Wurzelwerte";
             // 
             // rekusionsverfahrenToolStripMenuItem
             // 
-            rekusionsverfahrenToolStripMenuItem.Name = "rekusionsverfahrenToolStripMenuItem";
-            rekusionsverfahrenToolStripMenuItem.Size = new Size(180, 22);
-            rekusionsverfahrenToolStripMenuItem.Text = "Rekusionsverfahren";
-            rekusionsverfahrenToolStripMenuItem.Click += rekusionsverfahrenToolStripMenuItem_Click;
+            this.rekusionsverfahrenToolStripMenuItem.Name = "rekusionsverfahrenToolStripMenuItem";
+            this.rekusionsverfahrenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rekusionsverfahrenToolStripMenuItem.Text = "Rekusionsverfahren";
             // 
             // Hauptformular
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(menuStrip1);
-            IsMdiContainer = true;
-            Name = "Hauptformular";
-            Text = "Hauptformular";
-            WindowState = FormWindowState.Maximized;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.Name = "Hauptformular";
+            this.Text = "Hauptformular";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

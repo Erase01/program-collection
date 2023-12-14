@@ -12,11 +12,6 @@ namespace Programmsammlung
             this.Close();
         }
 
-        private void beendenToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void varablenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Variablen var = new Variablen();
