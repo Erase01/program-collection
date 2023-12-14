@@ -21,3 +21,29 @@ H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj
 H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\ref\Programmsammlung.dll
 H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Methoden.resources
 H:\Dokumente\Informatik - Herr Ernst\Projekt\Meineformulare1\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Arrays.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.csproj.AssemblyReference.cache
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Arrays.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Formvariablen.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Hauptformular.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Methoden.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Nährungsverfahren_zur_Berechnung_von_Wurzelwerten.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Properties.Resources.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Rekusionsverfahren.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Schleifen.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Variablen.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Verzweigungen.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.csproj.GenerateResource.cache
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.AssemblyInfoInputs.cache
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.AssemblyInfo.cs
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.csproj.CoreCompileInputs.cache
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.dll
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\refint\Programmsammlung.dll
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.pdb
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\bin\Debug\net6.0-windows\Programmsammlung.exe
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\bin\Debug\net6.0-windows\Programmsammlung.deps.json
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\bin\Debug\net6.0-windows\Programmsammlung.runtimeconfig.json
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\bin\Debug\net6.0-windows\Programmsammlung.dll
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\bin\Debug\net6.0-windows\Programmsammlung.pdb
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.genruntimeconfig.cache
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\ref\Programmsammlung.dll

@@ -20,9 +20,10 @@ namespace Programmsammlung
         {
             InitializeComponent();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
+
             var fx1 = Convert.ToDouble(numericUpDown1.Value);
             var fx2 = Convert.ToDouble(numericUpDown2.Value);
             var fx3 = Convert.ToDouble(numericUpDown3.Value);
@@ -35,9 +36,26 @@ namespace Programmsammlung
             var gx4 = Convert.ToDouble(numericUpDown7.Value);
             var gx5 = Convert.ToDouble(numericUpDown6.Value);
 
+            var startw = Convert.ToDouble(numericUpDown11.Value);
+            double preResult = 0;
+            double epsilon = 0.000001;
 
-            startw = startw - ((a1 - b1) * Math.Pow(startw, 4) + (a2 - b2) * Math.Pow(startw, 3) + (a3 - b3) * Math.Pow(startw, 2) + (a4 - b4) * Math.Pow(startw, 1) + (a5 - b5)) /
-                              (4 * (a1 - b1) * Math.Pow(startw, 3) + (a2 - b2) * Math.Pow(startw, 2) + (a3 - b3) * Math.Pow(startw, 1) + (a4 - b4)); */
+            while (true)
+            {
+                startw = startw - ((fx1 - gx1) * Math.Pow(startw, 4) + (fx2 - gx2) * Math.Pow(startw, 3) + (fx3 - gx3) * Math.Pow(startw, 2) + (fx4 - gx4) * Math.Pow(startw, 1) + (fx5 - gx5)) /
+                                  (4 * (fx1 - gx1) * Math.Pow(startw, 3) + (fx2 - gx2) * Math.Pow(startw, 2) + (fx3 - gx3) * Math.Pow(startw, 1) + (fx4 - gx4));
+                //listBox1.Items.Add(Convert.ToString(startw));
+
+                if (Math.Abs(startw - preResult) < epsilon)
+                {
+                    textBox1.Text = Convert.ToString(startw);
+                    textBox2.Text = Convert.ToString(0);
+                    break;
+                }
+
+                preResult = startw;
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,6 +70,9 @@ namespace Programmsammlung
             numericUpDown8.Value = 0;
             numericUpDown9.Value = 0;
             numericUpDown10.Value = 0;
+            numericUpDown11.Value = 0;
+            textBox1.Clear();
+            textBox2.Clear();
         }
     }
 }
