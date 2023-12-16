@@ -42,6 +42,16 @@ namespace Programmsammlung
                     dataGridView1.DataSource = CreateDataTable(eindimArray);
 
                 break;
+
+                case "Zweidimensionales Array":
+
+                    label2.Text = "Zweidimensionales Array";
+
+                    string[,] zweidimArray = new string[3,4] { { "Max", "Müller", "47", "Berlin" }, { "Sheldon", "Cooper", "38", "Pasadena" }, { "John", "Doe", "25", "New York" } };
+
+                    dataGridView1.DataSource = CreateDataTable(zweidimArray);
+
+                break;
             }
         }
 
@@ -56,6 +66,28 @@ namespace Programmsammlung
                 dt.Rows.Add(item);
             }
 
+            return dt;
+        }
+
+        private System.Data.DataTable CreateDataTable(string[,] data)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+
+            for (int col = 0; col < data.GetLength(0); col++)
+            {
+                dt.Columns.Add($"Column{col + 1}", typeof(string));
+            }
+
+            for (int row = 0; row < data.GetLength(1); row++)
+            {
+                DataRow newRow = dt.NewRow();
+                for (int col = 0; col < data.GetLength(0); col++)
+                {
+                    newRow[col] = data[col, row];
+                }
+                dt.Rows.Add(newRow);
+            }
+            
             return dt;
         }
     }
