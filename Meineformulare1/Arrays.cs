@@ -52,6 +52,27 @@ namespace Programmsammlung
                     dataGridView1.DataSource = CreateDataTable(zweidimArray);
 
                 break;
+
+                case "Jagged-Array":
+
+                    label2.Text = "Jagged-Array";
+
+                    string[][] jaggedArray = new string[][]
+                    {
+                        new string[] { "Max", "Müller" },
+                        new string[] { "Sheldon", "Cooper" },
+                        new string[] { "John", "Doe" }
+                    };
+
+                    dataGridView1.DataSource = CreateDataTable(jaggedArray);
+                
+                break;
+
+                default:
+
+                    MessageBox.Show("Wählen Sie bitte eine verfügbare Option aus!");
+
+                break;
             }
         }
 
@@ -88,6 +109,30 @@ namespace Programmsammlung
                 dt.Rows.Add(newRow);
             }
             
+            return dt;
+        }
+
+        private System.Data.DataTable CreateDataTable(string[][] data)
+        {
+            System.Data.DataTable dt = new System.Data.DataTable();
+
+            dt.Columns.Add("JaggedArray", typeof(string));
+            dt.Columns.Add("Array", typeof(string));
+            dt.Columns.Add("Element", typeof(string));
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                for (int j = 0; j < data[i].Length; j++)
+                {
+                    DataRow newRow = dt.NewRow();
+
+                    newRow["JaggedArray"] = $"JaggedArray1";
+                    newRow["Array"] = $"stringArray{i + 1}";
+                    newRow["Element"] = data[i][j];
+                    dt.Rows.Add(newRow);
+                }
+            }
+
             return dt;
         }
     }
