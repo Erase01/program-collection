@@ -13,12 +13,21 @@ namespace Programmsammlung
 {
     public partial class Methoden : Form
     {
+        private Panel drawingPanel;
         public Methoden()
         {
             InitializeComponent();
+
+            drawingPanel = new Panel();
+            drawingPanel.Location = new Point(301, 57);
+            drawingPanel.Size = new Size(450, 350);
+
+            this.Controls.Add(drawingPanel);
+
+            //drawingPanel.Paint += new PaintEventHandler(DrawingPanel_Paint);
         }
 
-        private void comboBox1_SelectedIndexChanged(string comb2value, object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(string com2value, object sender, EventArgs e)
         {
             string comItem = comboBox1.SelectedItem.ToString();
 
@@ -26,40 +35,9 @@ namespace Programmsammlung
             {
                 case "Methode mit Rückgabewert":
 
-                    if (comb2value == "Rechteck")
-                    {
+                    DrawSelectedShape(com2value, drawingPanel.CreateGraphics());
 
-                    }
-
-                    else if (comb2value == "Parallelogramm")
-                    {
-
-                    }
-
-                    else if (comb2value == "Raute")
-                    {
-
-                    }
-
-                    else if (comb2value == "Trapez")
-                    {
-
-                    }
-
-                    else if (comb2value == "Dreieck")
-                    {
-
-                    }
-
-                    else if (comb2value == "Kreis")
-                    {
-
-                    }
-                    else
-                    {
-                        comboBox1.Text = "Enter valid input!";
-                    }
-                    break;
+                break;
 
             }
         }
@@ -67,33 +45,54 @@ namespace Programmsammlung
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             string comBox = comboBox2.SelectedItem.ToString();
-            string value;
+            comboBox1_SelectedIndexChanged(comBox, sender, e);
 
-            switch (comBox)
+        }
+
+        private void DrawSelectedShape(string com2Value, Graphics g)
+        {
+            switch (com2Value)
             {
                 case "Rechteck":
-                    value = "Rechteck";
-                    comboBox1_SelectedIndexChanged(value, sender, e);
+                    
+
+
                     break;
+
                 case "Parallelogramm":
-                    value = "Parallelogramm";
-                    comboBox1_SelectedIndexChanged(value, sender, e);
+
+
+
                     break;
+
                 case "Raute":
-                    value = "Raute";
-                    comboBox1_SelectedIndexChanged(value, sender, e);
+
+
+
                     break;
+
                 case "Trapez":
-                    value = "Trapez";
-                    comboBox1_SelectedIndexChanged(value, sender, e);
+
+
+
                     break;
+
                 case "Dreieck":
-                    value = "Dreieck";
-                    comboBox1_SelectedIndexChanged(value, sender, e);
+
+                    Point[] dreieckPoints = { new Point(50,50), new Point(150,50), new Point(100,150)};
+                    g.FillPolygon(Brushes.Red, dreieckPoints);
+
                     break;
+
                 case "Kreis":
-                    value = "Kreis";
-                    comboBox1_SelectedIndexChanged(value, sender, e);
+
+
+
+                    break;
+
+                default: 
+                    
+                    
                     break;
             }
         }
