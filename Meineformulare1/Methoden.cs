@@ -13,20 +13,22 @@ namespace Programmsammlung
 {
     public partial class Methoden : Form
     {
-        private Panel drawingPanel;
-        private Bitmap drawingBitmap;
+        //private Panel drawingPanel;
+        //private Bitmap drawingBitmap;
+        int x = 301;
+        int y = 57;
         public Methoden()
         {
             InitializeComponent();
 
-            drawingPanel = new Panel();
-            drawingPanel.Location = new Point(301, 57);
-            drawingPanel.Size = new Size(450, 350);
+            //tt drawingPanel = new Panel();
+            //tt drawingPanel.Location = new Point(301, 57);
+            //tt drawingPanel.Size = new Size(450, 350);
 
-            this.Controls.Add(drawingPanel);
+            //tt this.Controls.Add(drawingPanel);
 
             //drawingPanel.Paint += new PaintEventHandler(DrawingPanel_Paint);
-            drawingBitmap = new Bitmap(drawingPanel.Width, drawingPanel.Height);
+            //drawingBitmap = new Bitmap(drawingPanel.Width, drawingPanel.Height);
 
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
@@ -67,7 +69,7 @@ namespace Programmsammlung
 
             }
 
-            drawingPanel.CreateGraphics().DrawImage(drawingBitmap, Point.Empty);
+            //tt drawingPanel.CreateGraphics().DrawImage(drawingBitmap, Point.Empty);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -81,49 +83,38 @@ namespace Programmsammlung
 
         private void DrawSelectedShape(ShapeType shapeType)
         {
-            using (Graphics g = Graphics.FromImage(drawingBitmap))
+            using (Graphics g = panel2.CreateGraphics())
             {
+
                 switch (shapeType)
                 {
                     case ShapeType.Rechteck:
-
-
-
+                        DrawRechteck(g);
+                        //panel2_Paint("test", this, new PaintEventArgs(panel2.CreateGraphics(), panel2.ClientRectangle));
                         break;
 
                     case ShapeType.Parallelogramm:
-
-
-
+                        DrawParallelogramm(g);
                         break;
 
                     case ShapeType.Raute:
-
-
-
+                        DrawRaute(g);
                         break;
 
                     case ShapeType.Trapez:
-
-
-
+                        DrawTrapez(g);
                         break;
 
                     case ShapeType.Dreieck:
-
-                        Point[] dreieckPoints = { new Point(50, 50), new Point(150, 50), new Point(100, 150) };
-                        g.FillPolygon(Brushes.Red, dreieckPoints);
+                        DrawDreieck(g);
                         break;
 
                     case ShapeType.Kreis:
-
-
-
+                        DrawKreis(g);
                         break;
 
                     default:
-
-
+                        MessageBox.Show("Error: Gewählte Form ist nicht verfügbar!");
                         break;
                 }
             }
@@ -171,6 +162,43 @@ namespace Programmsammlung
             Dreieck,
             Kreis,
             Default
+        }
+
+        private void DrawRechteck(Graphics g)
+        {
+            Pen p = new(Color.Black);
+            SolidBrush sb = new SolidBrush(Color.Red);
+            g.DrawRectangle(p, x - 50, y - 50, 50, 50);
+            g.FillRectangle(sb,x - 50,y - 50, 50, 50);
+        }
+
+        private void DrawParallelogramm(Graphics g)
+        {
+            Point[] parallelogrammPoints = {
+                new Point(100,100),
+                new Point(200,100),
+                new Point(250,200),
+                new Point(150,200)
+            };
+
+            SolidBrush sb = new SolidBrush(Color.Blue);
+            g.FillPolygon(sb, parallelogrammPoints);
+        }
+        private void DrawRaute(Graphics g)
+        {
+
+        }
+        private void DrawTrapez(Graphics g)
+        {
+
+        }
+        private void DrawDreieck(Graphics g)
+        {
+
+        }
+        private void DrawKreis(Graphics g)
+        {
+
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
