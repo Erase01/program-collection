@@ -85,6 +85,7 @@ namespace Programmsammlung
         {
             using (Graphics g = panel2.CreateGraphics())
             {
+                g.Clear(SystemColors.Control);
 
                 switch (shapeType)
                 {
@@ -117,7 +118,7 @@ namespace Programmsammlung
                         MessageBox.Show("Error: Gewählte Form ist nicht verfügbar!");
                         break;
                 }
-            }
+            }            
         }
         private ShapeType GetShapeType(string shapeName)
         {
@@ -168,17 +169,17 @@ namespace Programmsammlung
         {
             Pen p = new(Color.Black);
             SolidBrush sb = new SolidBrush(Color.Red);
-            g.DrawRectangle(p, x - 50, y - 50, 50, 50);
-            g.FillRectangle(sb,x - 50,y - 50, 50, 50);
+            g.DrawRectangle(p, 150, 0, 200, 200);
+            g.FillRectangle(sb, 150, 0, 200, 200);
         }
 
         private void DrawParallelogramm(Graphics g)
         {
             Point[] parallelogrammPoints = {
-                new Point(100,100),
-                new Point(200,100),
-                new Point(250,200),
-                new Point(150,200)
+                new Point(150,100),     //100,100   125,100
+                new Point(300,100),     //200,100   275,100
+                new Point(350,200),     //250,200   350,200
+                new Point(200,200)      //150,200   200,200
             };
 
             SolidBrush sb = new SolidBrush(Color.Blue);
@@ -186,19 +187,45 @@ namespace Programmsammlung
         }
         private void DrawRaute(Graphics g)
         {
+            Point[] rautePoints = {
+                new Point(250, 200),    //200,100
+                new Point(350, 100),    //300,200
+                new Point(250, 0),    //200,300
+                new Point(150, 100)     //100,200
+            };
 
+            SolidBrush sb = new SolidBrush(Color.Green);
+            g.FillPolygon(sb, rautePoints);
         }
         private void DrawTrapez(Graphics g)
         {
-
+            Point[] trapezPoints = {
+                new Point(200, 100),    //300,100   125, 100
+                new Point(300, 100),    //400,100   275, 100
+                new Point(350, 200),    //350,200   350, 200
+                new Point(150, 200)     //250,200    50, 200
+            };
+            SolidBrush sb = new SolidBrush(Color.Yellow);
+            g.FillPolygon(sb, trapezPoints);
         }
         private void DrawDreieck(Graphics g)
         {
+            Point[] dreieckPoints = {
+                new Point(250, 0),    //150,200
+                new Point(150, 200),    //100,300
+                new Point(350, 200)     //200,300
+                
+            };
 
+            SolidBrush sb = new SolidBrush(Color.Pink);
+            g.FillPolygon(sb, dreieckPoints);
         }
         private void DrawKreis(Graphics g)
         {
-
+            Pen p = new(Color.Black);
+            SolidBrush sb = new SolidBrush(Color.Orange);
+            g.DrawEllipse(p, 150, 0, 200, 200);
+            g.FillEllipse(sb, 150, 0, 200, 200);
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
