@@ -20,6 +20,11 @@ namespace Programmsammlung
         int x = 301;
         int y = 57;
         string whForm;
+        private ShapeType current;
+
+        private int höhe = 0;
+        private int lastv = 0;
+        private int lasth = 0;
         public Methoden()
         {
             InitializeComponent();
@@ -35,6 +40,7 @@ namespace Programmsammlung
 
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            trackBar1.Scroll += trackBar1_Scroll;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -130,7 +136,7 @@ namespace Programmsammlung
 
         private string DrawSelectedShapeWithReturn(ShapeType shapeType, int höhe = 0)
         {
-
+            current = shapeType;
             using (Graphics g = panel2.CreateGraphics())
             {
                 g.Clear(SystemColors.Control);
@@ -138,7 +144,7 @@ namespace Programmsammlung
                 switch (shapeType)
                 {
                     case ShapeType.Rechteck:
-                        whForm = DrawRechteck(g);
+                        whForm = DrawRechteck(g, 150, 0, 200 + höhe, 200 + höhe);
                         break;
 
                     case ShapeType.Parallelogramm:
@@ -222,7 +228,7 @@ namespace Programmsammlung
             g.DrawRectangle(p, x, y, width, height);
             g.FillRectangle(sb, x, y, width, height);
 
-            trackBar1_Scroll(ShapeType.Parallelogramm, this, EventArgs.Empty);
+            //trackBar1_Scroll(ShapeType.Parallelogramm, this, EventArgs.Empty);
 
             return $"Seite a: {width} | Seite b: {height}";
         }
@@ -251,7 +257,7 @@ namespace Programmsammlung
             SolidBrush sb = new SolidBrush(Color.Green);
             g.FillPolygon(sb, rautePoints);
 
-            trackBar1_Scroll(ShapeType.Raute, this, EventArgs.Empty);
+            //trackBar1_Scroll(ShapeType.Raute, this, EventArgs.Empty);
 
             
         }
@@ -285,20 +291,24 @@ namespace Programmsammlung
             g.DrawEllipse(p, 150, 0, 200, 200);
             g.FillEllipse(sb, 150, 0, 200, 200);
         }
-
-        private void trackBar1_Scroll(ShapeType SelectedShape, object sender, EventArgs e)
+        private void trackBar1_Scroll(object sender, EventArgs e)
         {
             int value = trackBar1.Value;
-            int vhöhe = value;
-            int höhe = 0;
-            ShapeType aktuell = SelectedShape;
 
-
-            if (value > vhöhe)
+            if (value > lastv)
             {
+                lasth += höhe;
                 höhe += -25;
-                DrawSelectedShapeWithReturn(aktuell, höhe);
+                whForm = DrawSelectedShapeWithReturn(current, höhe);
             }
+            else if (value < lastv)
+            {
+                höhe += 25;
+                whForm = DrawSelectedShapeWithReturn(current, höhe);
+            }
+            textBox1.Text = whForm;
+            lastv = value;
+            lasth = höhe;
         }
 
         private void trackBar2_Scroll(object sender, EventArgs e)
