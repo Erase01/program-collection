@@ -46,6 +46,7 @@
             // trackBar1
             // 
             this.trackBar1.Location = new System.Drawing.Point(12, 99);
+            this.trackBar1.Maximum = 9;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(173, 45);
             this.trackBar1.TabIndex = 1;
@@ -54,7 +55,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Methode mit Rückgabewert ",
+            "Methode mit Rückgabewert",
             "Methode ohne Rückgabewert",
             "Methode mit Referenz"});
             this.comboBox1.Location = new System.Drawing.Point(12, 22);

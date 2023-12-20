@@ -5,9 +5,11 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Programmsammlung.Methoden;
 
 namespace Programmsammlung
 {
@@ -17,6 +19,7 @@ namespace Programmsammlung
         //private Bitmap drawingBitmap;
         int x = 301;
         int y = 57;
+        string whForm;
         public Methoden()
         {
             InitializeComponent();
@@ -49,12 +52,13 @@ namespace Programmsammlung
                 return;
 
             ShapeType selectedShapeType = GetShapeType(com2Item);
-
+            
             switch (comItem)
             {
                 case "Methode mit Rückgabewert":
 
-                    
+                    whForm = DrawSelectedShapeWithReturn(selectedShapeType);
+                    textBox1.Text = whForm;
 
                     break;
 
@@ -65,6 +69,10 @@ namespace Programmsammlung
                     break;
 
                 case "Methode mit Referenz":
+                    break;
+
+                default:
+                    MessageBox.Show("no");
                     break;
 
             }
@@ -91,7 +99,6 @@ namespace Programmsammlung
                 {
                     case ShapeType.Rechteck:
                         DrawRechteck(g);
-                        //panel2_Paint("test", this, new PaintEventArgs(panel2.CreateGraphics(), panel2.ClientRectangle));
                         break;
 
                     case ShapeType.Parallelogramm:
@@ -120,6 +127,49 @@ namespace Programmsammlung
                 }
             }            
         }
+
+        private string DrawSelectedShapeWithReturn(ShapeType shapeType, int höhe = 0)
+        {
+
+            using (Graphics g = panel2.CreateGraphics())
+            {
+                g.Clear(SystemColors.Control);
+
+                switch (shapeType)
+                {
+                    case ShapeType.Rechteck:
+                        whForm = DrawRechteck(g);
+                        break;
+
+                    case ShapeType.Parallelogramm:
+                        DrawParallelogramm(g);
+                        break;
+
+                    case ShapeType.Raute:
+                        DrawRaute(g);
+                        break;
+
+                    case ShapeType.Trapez:
+                        DrawTrapez(g);
+                        break;
+
+                    case ShapeType.Dreieck:
+                        DrawDreieck(g);
+                       break;
+
+                    case ShapeType.Kreis:
+                        DrawKreis(g);
+                        break;
+
+                    default:
+                        MessageBox.Show("Error: Gewählte Form ist nicht verfügbar!");
+                        break;
+                }
+            }
+
+            return whForm;
+        }
+
         private ShapeType GetShapeType(string shapeName)
         {
             switch(shapeName)
@@ -165,12 +215,16 @@ namespace Programmsammlung
             Default
         }
 
-        private void DrawRechteck(Graphics g)
+        private string DrawRechteck(Graphics g, int x = 150, int y = 0, int width = 200, int height = 200)
         {
             Pen p = new(Color.Black);
             SolidBrush sb = new SolidBrush(Color.Red);
-            g.DrawRectangle(p, 150, 0, 200, 200);
-            g.FillRectangle(sb, 150, 0, 200, 200);
+            g.DrawRectangle(p, x, y, width, height);
+            g.FillRectangle(sb, x, y, width, height);
+
+            trackBar1_Scroll(ShapeType.Parallelogramm, this, EventArgs.Empty);
+
+            return $"Seite a: {width} | Seite b: {height}";
         }
 
         private void DrawParallelogramm(Graphics g)
@@ -196,6 +250,10 @@ namespace Programmsammlung
 
             SolidBrush sb = new SolidBrush(Color.Green);
             g.FillPolygon(sb, rautePoints);
+
+            trackBar1_Scroll(ShapeType.Raute, this, EventArgs.Empty);
+
+            
         }
         private void DrawTrapez(Graphics g)
         {
@@ -228,14 +286,24 @@ namespace Programmsammlung
             g.FillEllipse(sb, 150, 0, 200, 200);
         }
 
-        private void trackBar1_Scroll(object sender, EventArgs e)
+        private void trackBar1_Scroll(ShapeType SelectedShape, object sender, EventArgs e)
         {
+            int value = trackBar1.Value;
+            int vhöhe = value;
+            int höhe = 0;
+            ShapeType aktuell = SelectedShape;
 
+
+            if (value > vhöhe)
+            {
+                höhe += -25;
+                DrawSelectedShapeWithReturn(aktuell, höhe);
+            }
         }
 
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
-
+            int breite = trackBar2.Value;
         }
     }
 }
