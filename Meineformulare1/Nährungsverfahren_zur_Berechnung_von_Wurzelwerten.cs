@@ -17,10 +17,36 @@ namespace Programmsammlung
             InitializeComponent();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            int startNae = Convert.ToInt32(textBox3.Text);
+            double x0 = (double)numericUpDown1.Value;
+            double radikant = (double)numericUpDown2.Value;
+            double exponent = (double)numericUpDown3.Value;
+
+            double epsilon = 0.000001;
+
+            int iterationen = 0;
+            double x = x0;
+
+
+            while (Math.Abs(Math.Pow(x, exponent) - radikant) > epsilon && iterationen < 1000)
+            {
+                x = x - (Math.Pow(x, exponent) - radikant) / (exponent * Math.Pow(x, exponent - 1));
+
+                listBox1.Items.Add(iterationen);
+                listBox2.Items.Add(x);
+                iterationen++;
+            }
+
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            numericUpDown1.Value = 0;
+            numericUpDown2.Value = 0;
+            numericUpDown3.Value = 0;
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+        }
     }
 }
