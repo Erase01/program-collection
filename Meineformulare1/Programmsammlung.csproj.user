@@ -7,6 +7,9 @@
     <Compile Update="Bernoulli_Versuch.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Cramersche_Regel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formvariablen.cs">
       <SubType>Form</SubType>
     </Compile>

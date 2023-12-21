@@ -41,6 +41,7 @@
             this.wurzelwerteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rekusionsverfahrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bernoulliVersuchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cramerscheRegelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +74,8 @@
             this.methodenToolStripMenuItem,
             this.nährungToolStripMenuItem,
             this.rekusionsverfahrenToolStripMenuItem,
-            this.bernoulliVersuchToolStripMenuItem});
+            this.bernoulliVersuchToolStripMenuItem,
+            this.cramerscheRegelToolStripMenuItem});
             this.eingefügteFormulareToolStripMenuItem.Name = "eingefügteFormulareToolStripMenuItem";
             this.eingefügteFormulareToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
             this.eingefügteFormulareToolStripMenuItem.Text = "Eingefügte_Formulare";
@@ -149,6 +151,13 @@
             this.bernoulliVersuchToolStripMenuItem.Text = "Bernoulli-Versuch";
             this.bernoulliVersuchToolStripMenuItem.Click += new System.EventHandler(this.bernoulliVersuchToolStripMenuItem_Click);
             // 
+            // cramerscheRegelToolStripMenuItem
+            // 
+            this.cramerscheRegelToolStripMenuItem.Name = "cramerscheRegelToolStripMenuItem";
+            this.cramerscheRegelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cramerscheRegelToolStripMenuItem.Text = "Cramersche Regel";
+            this.cramerscheRegelToolStripMenuItem.Click += new System.EventHandler(this.cramerscheRegelToolStripMenuItem_Click);
+            // 
             // Hauptformular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -181,5 +190,6 @@
         private ToolStripMenuItem wurzelwerteToolStripMenuItem;
         private ToolStripMenuItem rekusionsverfahrenToolStripMenuItem;
         private ToolStripMenuItem bernoulliVersuchToolStripMenuItem;
+        private ToolStripMenuItem cramerscheRegelToolStripMenuItem;
     }
 }

@@ -75,5 +75,12 @@ namespace Programmsammlung
             bernoulli_Versuch.MdiParent = this;
             bernoulli_Versuch.Show();
         }
+
+        private void cramerscheRegelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cramersche_Regel cramersche_Regel = new Cramersche_Regel();
+            cramersche_Regel.MdiParent = this;
+            cramersche_Regel.Show();
+        }
     }
 }

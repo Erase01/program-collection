@@ -48,3 +48,4 @@ C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meinefo
 C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.genruntimeconfig.cache
 C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\ref\Programmsammlung.dll
 C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Bernoulli_Versuch.resources
+C:\Users\Luca Julien\Documents\Schule\BBSII\Ernst\OOP\program-collection\Meineformulare1\obj\Debug\net6.0-windows\Programmsammlung.Cramersche_Regel.resources
