@@ -150,23 +150,23 @@ namespace Programmsammlung
                         break;
 
                     case ShapeType.Parallelogramm:
-                        DrawParallelogramm(g, 150 + breite, 100 + breite, 300 + höhe, 100 + breite, 350 + höhe, 200 + höhe, 200 + breite, 200 + höhe);
+                        whForm = DrawParallelogramm(g, 150 + breite, 100 + breite, 300 + höhe, 100 + breite, 350 + höhe, 200 + höhe, 200 + breite, 200 + höhe);
                         break;
 
                     case ShapeType.Raute:
-                        DrawRaute(g, 250, 200 + höhe, 350 + höhe, 100, 250, 0 + breite, 150 + breite, 100);
+                        whForm = DrawRaute(g, 250, 200 + höhe, 350 + höhe, 100, 250, 0 + breite, 150 + breite, 100);
                         break;
 
                     case ShapeType.Trapez:
-                        DrawTrapez(g, 200 + breite, 100 + breite, 300 + höhe, 100 + breite, 350 + höhe, 200 + höhe, 150 + breite, 200 + höhe);
+                        whForm = DrawTrapez(g, 200 + breite, 100 + breite, 300 + höhe, 100 + breite, 350 + höhe, 200 + höhe, 150 + breite, 200 + höhe);
                         break;
 
                     case ShapeType.Dreieck:
-                        DrawDreieck(g, 250, 0 + breite, 150 + breite, 200 + höhe, 350 + höhe, 200 + höhe);
+                        whForm = DrawDreieck(g, 250, 0 + breite, 150 + breite, 200 + höhe, 350 + höhe, 200 + höhe);
                        break;
 
                     case ShapeType.Kreis:
-                        DrawKreis(g, 150, 0, 200 + höhe, 200 + höhe);
+                        whForm = DrawKreis(g, 150, 0, 200 + höhe, 200 + höhe);
                         break;
 
                     default:
@@ -232,10 +232,10 @@ namespace Programmsammlung
 
             //trackBar1_Scroll(ShapeType.Parallelogramm, this, EventArgs.Empty);
 
-            return $"Seite a: {width} | Seite b: {height}";
+            return $"a: {width} | b: {height}";
         }
 
-        private void DrawParallelogramm(Graphics g, int x1 = 150, int y1 = 100, int x2 = 300, int y2 = 100, int x3 = 350, int y3 = 200, int x4 = 200, int y4 = 200 )
+        private string DrawParallelogramm(Graphics g, int x1 = 150, int y1 = 100, int x2 = 300, int y2 = 100, int x3 = 350, int y3 = 200, int x4 = 200, int y4 = 200 )
         {
             Point[] parallelogrammPoints = {
                 new Point(x1, y1),     //100,100   125,100
@@ -247,9 +247,9 @@ namespace Programmsammlung
             SolidBrush sb = new SolidBrush(Color.Blue);
             g.FillPolygon(sb, parallelogrammPoints);
 
-            //return $"Seite a: {width} | Seite b: {height}";       TODO!
+            return $"b: {x3 - x1} | h: {y3 - y1}";
         }
-        private void DrawRaute(Graphics g, int x1 = 250, int y1 = 200, int x2 = 350, int y2 = 100, int x3 = 250, int y3 = 0, int x4 = 150, int y4 = 100 )
+        private string DrawRaute(Graphics g, int x1 = 250, int y1 = 200, int x2 = 350, int y2 = 100, int x3 = 250, int y3 = 0, int x4 = 150, int y4 = 100 )
         {
             Point[] rautePoints = {
                 new Point(x1, y1),    //200,100
@@ -261,9 +261,9 @@ namespace Programmsammlung
             SolidBrush sb = new SolidBrush(Color.Green);
             g.FillPolygon(sb, rautePoints);
 
-            //return $"Seite a: {width} | Seite b: {height}";       TODO!
+            return $"e: {x2 - x4} | f: {y1 - y3}";
         }
-        private void DrawTrapez(Graphics g, int x1 = 200, int y1 = 100, int x2 = 300, int y2 = 100, int x3 = 350, int y3 = 200, int x4 = 150, int y4 = 200 )
+        private string DrawTrapez(Graphics g, int x1 = 200, int y1 = 100, int x2 = 300, int y2 = 100, int x3 = 350, int y3 = 200, int x4 = 150, int y4 = 200 )
         {
             Point[] trapezPoints = {
                 new Point(x1, y1),    //300,100   125, 100
@@ -274,9 +274,9 @@ namespace Programmsammlung
             SolidBrush sb = new SolidBrush(Color.Yellow);
             g.FillPolygon(sb, trapezPoints);
 
-            //return $"Seite a: {width} | Seite b: {height}";       TODO!
+            return $"m: {((x3 - x4) + (x2 - x1)) / 2} | h: {y3 - y2}";
         }
-        private void DrawDreieck(Graphics g, int x1 = 250, int y1 = 0, int x2 = 150, int y2 = 200, int x3 = 350, int y3 = 200 )
+        private string DrawDreieck(Graphics g, int x1 = 250, int y1 = 0, int x2 = 150, int y2 = 200, int x3 = 350, int y3 = 200 )
         {
             Point[] dreieckPoints = {
                 new Point(x1, y1),    //150,200
@@ -288,16 +288,16 @@ namespace Programmsammlung
             SolidBrush sb = new SolidBrush(Color.Pink);
             g.FillPolygon(sb, dreieckPoints);
 
-            //return $"Seite a: {width} | Seite b: {height}";       TODO!
+            return $"g: {x3 - x2} | h: {y3 - y1}";
         }
-        private void DrawKreis(Graphics g, int x = 150, int y = 0, int width = 200, int height = 200 )
+        private string DrawKreis(Graphics g, int x = 150, int y = 0, int width = 200, int height = 200 )
         {
             Pen p = new(Color.Black);
             SolidBrush sb = new SolidBrush(Color.Orange);
             g.DrawEllipse(p, x, y, width, height);
             g.FillEllipse(sb, x, y, width, height);
 
-            //return $"Seite a: {width} | Seite b: {height}";       TODO!
+            return $"U: { Math.PI * (width / 2) * 2} | r: {height / 2}";
         }
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
