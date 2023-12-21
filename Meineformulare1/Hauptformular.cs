@@ -68,5 +68,12 @@ namespace Programmsammlung
             rekusion.MdiParent = this;
             rekusion.Show();
         }
+
+        private void bernoulliVersuchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bernoulli_Versuch bernoulli_Versuch = new Bernoulli_Versuch();
+            bernoulli_Versuch.MdiParent = this;
+            bernoulli_Versuch.Show();
+        }
     }
 }

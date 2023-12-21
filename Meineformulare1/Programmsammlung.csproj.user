@@ -4,6 +4,9 @@
     <Compile Update="Arrays.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Bernoulli_Versuch.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formvariablen.cs">
       <SubType>Form</SubType>
     </Compile>

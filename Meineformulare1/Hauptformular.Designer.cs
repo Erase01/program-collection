@@ -40,6 +40,7 @@
             this.nährungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wurzelwerteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rekusionsverfahrenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bernoulliVersuchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +72,8 @@
             this.arraysToolStripMenuItem,
             this.methodenToolStripMenuItem,
             this.nährungToolStripMenuItem,
-            this.rekusionsverfahrenToolStripMenuItem});
+            this.rekusionsverfahrenToolStripMenuItem,
+            this.bernoulliVersuchToolStripMenuItem});
             this.eingefügteFormulareToolStripMenuItem.Name = "eingefügteFormulareToolStripMenuItem";
             this.eingefügteFormulareToolStripMenuItem.Size = new System.Drawing.Size(135, 20);
             this.eingefügteFormulareToolStripMenuItem.Text = "Eingefügte_Formulare";
@@ -129,7 +131,7 @@
             // wurzelwerteToolStripMenuItem
             // 
             this.wurzelwerteToolStripMenuItem.Name = "wurzelwerteToolStripMenuItem";
-            this.wurzelwerteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.wurzelwerteToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.wurzelwerteToolStripMenuItem.Text = "Wurzelwerte";
             this.wurzelwerteToolStripMenuItem.Click += new System.EventHandler(this.wurzelwerteToolStripMenuItem_Click);
             // 
@@ -139,6 +141,13 @@
             this.rekusionsverfahrenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rekusionsverfahrenToolStripMenuItem.Text = "Rekusionsverfahren";
             this.rekusionsverfahrenToolStripMenuItem.Click += new System.EventHandler(this.rekusionsverfahrenToolStripMenuItem_Click);
+            // 
+            // bernoulliVersuchToolStripMenuItem
+            // 
+            this.bernoulliVersuchToolStripMenuItem.Name = "bernoulliVersuchToolStripMenuItem";
+            this.bernoulliVersuchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bernoulliVersuchToolStripMenuItem.Text = "Bernoulli-Versuch";
+            this.bernoulliVersuchToolStripMenuItem.Click += new System.EventHandler(this.bernoulliVersuchToolStripMenuItem_Click);
             // 
             // Hauptformular
             // 
@@ -171,5 +180,6 @@
         private ToolStripMenuItem nährungToolStripMenuItem;
         private ToolStripMenuItem wurzelwerteToolStripMenuItem;
         private ToolStripMenuItem rekusionsverfahrenToolStripMenuItem;
+        private ToolStripMenuItem bernoulliVersuchToolStripMenuItem;
     }
 }
