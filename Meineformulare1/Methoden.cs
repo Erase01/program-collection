@@ -15,8 +15,7 @@ namespace Programmsammlung
 {
     public partial class Methoden : Form
     {
-        //private Panel drawingPanel;
-        //private Bitmap drawingBitmap;
+
         int x = 301;
         int y = 57;
         string whForm;
@@ -50,12 +49,6 @@ namespace Programmsammlung
             string com2Item = comboBox2.SelectedItem?.ToString();
             string comItem = comboBox1.SelectedItem?.ToString();
 
-            /*while (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
-            {
-                comItem = comboBox1.SelectedItem.ToString();
-                com2Item = comboBox2.SelectedItem.ToString();
-            }*/
-
             if (comItem == null || com2Item == null)
                 return;
 
@@ -65,6 +58,10 @@ namespace Programmsammlung
             {
                 case "Methode mit Rückgabewert":
 
+                    label1.Visible = true;
+                    textBox1.Visible= true;
+                    textBox1.Text = "Höhe:";
+                    trackBar1.Visible = true;
                     whForm = DrawSelectedShapeWithReturn(selectedShapeType);
                     textBox1.Text = whForm;
 
@@ -73,10 +70,22 @@ namespace Programmsammlung
                 case "Methode ohne Rückgabewert":
 
                     DrawSelectedShape(selectedShapeType);
+                    trackBar1.Visible = false;
+                    textBox1.Visible = false;
+                    label1.Visible = false;
 
                     break;
 
                 case "Methode mit Referenz":
+
+                    trackBar1.Visible= false;
+                    textBox1.Visible = true;
+                    label1.Visible = true;
+                    label1.Text = "Anzahl der gezeichneten Formen:";
+                    int numberOfShaps = 0;
+                    string updatedNumberOfShapes = DrawSelectedShapeWithReference(selectedShapeType, ref numberOfShaps);
+                    textBox1.Text = updatedNumberOfShapes;
+                    
                     break;
 
                 default:
@@ -176,6 +185,48 @@ namespace Programmsammlung
             }
 
             return whForm;
+        }
+
+        private string DrawSelectedShapeWithReference(ShapeType shapeType, ref int numberOfShapsDrawn ) 
+        {
+            using (Graphics g = panel2.CreateGraphics())
+            {
+                g.Clear(SystemColors.Control);
+
+                switch (shapeType)
+                {
+                    case ShapeType.Rechteck:
+                        DrawRechteck(g);
+                        break;
+
+                    case ShapeType.Parallelogramm:
+                        DrawParallelogramm(g);
+                        break;
+
+                    case ShapeType.Raute:
+                        DrawRaute(g);
+                        break;
+
+                    case ShapeType.Trapez:
+                        DrawTrapez(g);
+                        break;
+
+                    case ShapeType.Dreieck:
+                        DrawDreieck(g);
+                        break;
+
+                    case ShapeType.Kreis:
+                        DrawKreis(g);
+                        break;
+
+                    default:
+                        MessageBox.Show("Error: Gewählte Form ist nicht verfügbar!");
+                        break;
+                }
+
+                numberOfShapsDrawn++;
+                return Convert.ToString(numberOfShapsDrawn);
+            }
         }
 
         private ShapeType GetShapeType(string shapeName)
@@ -323,9 +374,5 @@ namespace Programmsammlung
             lastb = breite;
         }
 
-        private void trackBar2_Scroll(object sender, EventArgs e)
-        {
-            int breite = trackBar2.Value;
-        }
     }
 }
