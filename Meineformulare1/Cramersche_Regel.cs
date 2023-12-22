@@ -46,7 +46,9 @@ namespace Programmsammlung
                 double y = detY / detGesamt;
                 double z = detZ / detGesamt;
 
-                listBox1.Items.Add($"Lösung x = {x},\n y = {y},\n z = {z}\n");
+                listBox1.Items.Add($"Lösung x = {x},");
+                listBox1.Items.Add($"y = {y},");
+                listBox1.Items.Add($"z = {z}");
             }
             catch (FormatException)
             {
@@ -125,6 +127,19 @@ namespace Programmsammlung
 
         private void button2_Click(object sender, EventArgs e)
         {
+            numericUpDownA11.Value = 0;
+            numericUpDownA12.Value = 0;
+            numericUpDownA13.Value = 0;
+            numericUpDownA21.Value = 0;
+            numericUpDownA22.Value = 0;
+            numericUpDownA23.Value = 0;
+            numericUpDownA31.Value = 0;
+            numericUpDownA32.Value = 0;
+            numericUpDownA33.Value = 0;
+            numericUpDownB1.Value = 0;
+            numericUpDownB2.Value = 0;
+            numericUpDownB3.Value = 0;
+            listBox1.Items.Clear();
 
         }
     }

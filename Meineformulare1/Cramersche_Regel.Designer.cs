@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.numericUpDownA11 = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.numericUpDownA12 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownA13 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownB1 = new System.Windows.Forms.NumericUpDown();
@@ -89,20 +88,23 @@
             // numericUpDownA11
             // 
             this.numericUpDownA11.Location = new System.Drawing.Point(72, 30);
+            this.numericUpDownA11.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA11.Name = "numericUpDownA11";
             this.numericUpDownA11.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA11.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(379, 331);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 1;
-            // 
             // numericUpDownA12
             // 
             this.numericUpDownA12.Location = new System.Drawing.Point(230, 30);
+            this.numericUpDownA12.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA12.Name = "numericUpDownA12";
             this.numericUpDownA12.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA12.TabIndex = 2;
@@ -110,6 +112,11 @@
             // numericUpDownA13
             // 
             this.numericUpDownA13.Location = new System.Drawing.Point(379, 30);
+            this.numericUpDownA13.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA13.Name = "numericUpDownA13";
             this.numericUpDownA13.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA13.TabIndex = 3;
@@ -117,6 +124,11 @@
             // numericUpDownB1
             // 
             this.numericUpDownB1.Location = new System.Drawing.Point(552, 30);
+            this.numericUpDownB1.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownB1.Name = "numericUpDownB1";
             this.numericUpDownB1.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownB1.TabIndex = 4;
@@ -124,6 +136,11 @@
             // numericUpDownA21
             // 
             this.numericUpDownA21.Location = new System.Drawing.Point(72, 76);
+            this.numericUpDownA21.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA21.Name = "numericUpDownA21";
             this.numericUpDownA21.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA21.TabIndex = 5;
@@ -131,6 +148,11 @@
             // numericUpDownA22
             // 
             this.numericUpDownA22.Location = new System.Drawing.Point(230, 76);
+            this.numericUpDownA22.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA22.Name = "numericUpDownA22";
             this.numericUpDownA22.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA22.TabIndex = 6;
@@ -138,6 +160,11 @@
             // numericUpDownA23
             // 
             this.numericUpDownA23.Location = new System.Drawing.Point(379, 76);
+            this.numericUpDownA23.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA23.Name = "numericUpDownA23";
             this.numericUpDownA23.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA23.TabIndex = 7;
@@ -145,6 +172,11 @@
             // numericUpDownB2
             // 
             this.numericUpDownB2.Location = new System.Drawing.Point(552, 76);
+            this.numericUpDownB2.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownB2.Name = "numericUpDownB2";
             this.numericUpDownB2.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownB2.TabIndex = 8;
@@ -152,6 +184,11 @@
             // numericUpDownA31
             // 
             this.numericUpDownA31.Location = new System.Drawing.Point(72, 124);
+            this.numericUpDownA31.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA31.Name = "numericUpDownA31";
             this.numericUpDownA31.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA31.TabIndex = 9;
@@ -159,6 +196,11 @@
             // numericUpDownA32
             // 
             this.numericUpDownA32.Location = new System.Drawing.Point(230, 124);
+            this.numericUpDownA32.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA32.Name = "numericUpDownA32";
             this.numericUpDownA32.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA32.TabIndex = 10;
@@ -166,6 +208,11 @@
             // numericUpDownA33
             // 
             this.numericUpDownA33.Location = new System.Drawing.Point(379, 124);
+            this.numericUpDownA33.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownA33.Name = "numericUpDownA33";
             this.numericUpDownA33.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownA33.TabIndex = 11;
@@ -173,6 +220,11 @@
             // numericUpDownB3
             // 
             this.numericUpDownB3.Location = new System.Drawing.Point(552, 124);
+            this.numericUpDownB3.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownB3.Name = "numericUpDownB3";
             this.numericUpDownB3.Size = new System.Drawing.Size(100, 23);
             this.numericUpDownB3.TabIndex = 12;
@@ -428,7 +480,7 @@
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(379, 204);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 94);
+            this.listBox1.Size = new System.Drawing.Size(273, 94);
             this.listBox1.TabIndex = 40;
             // 
             // button1
@@ -454,9 +506,10 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(410, 186);
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label28.Location = new System.Drawing.Point(475, 181);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(52, 15);
+            this.label28.Size = new System.Drawing.Size(66, 20);
             this.label28.TabIndex = 43;
             this.label28.Text = "Ergebnis";
             // 
@@ -507,7 +560,6 @@
             this.Controls.Add(this.numericUpDownB1);
             this.Controls.Add(this.numericUpDownA13);
             this.Controls.Add(this.numericUpDownA12);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.numericUpDownA11);
             this.Name = "Cramersche_Regel";
             this.Text = "Cramersche_Regel";
@@ -531,7 +583,6 @@
         #endregion
 
         private NumericUpDown numericUpDownA11;
-        private TextBox textBox1;
         private NumericUpDown numericUpDownA12;
         private NumericUpDown numericUpDownA13;
         private NumericUpDown numericUpDownB1;
